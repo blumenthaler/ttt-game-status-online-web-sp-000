@@ -115,7 +115,7 @@ end
 # true if game has been won(regardless if board is full or not), is a draw, or is full
 
 def over?(board)
-  if won?(board) || draw?()
+  if won?(board) || draw?(board)
     true
   elsif draw?(board)
     true
