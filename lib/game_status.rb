@@ -115,13 +115,9 @@ end
 # true if game has been won(regardless if board is full or not), is a draw, or is full
 
 def over?(board)
-  if won?(board) == true
+  if won?(board)
     true
-  elsif draw?(board) == true
-    true
-  elsif won?(board) == true && full?(board) == false
-    true
-  elsif full?(board) == true
+  elsif draw?(board)
     true
   else
     false
