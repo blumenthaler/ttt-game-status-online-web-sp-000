@@ -36,8 +36,8 @@ def won?(board)
         return false
       end
     end
-  if win_combo == true 
-    true
+  if win_combo == true  
+    win_combo
   else
     false
   end
