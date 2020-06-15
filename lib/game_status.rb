@@ -46,8 +46,8 @@ def over?(board)
 end 
 
 def winner(board)
-  won?(board)
-  if won?(board) == true && win_combo.include("X")
+  winning_combo = won?(board)
+  
     return "X"
   elsif won?(board) == true && win_combo.include("O")
     return "O"
