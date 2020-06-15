@@ -28,7 +28,7 @@ def won?(board)
     if empty_board
      false
     end
-  WIN_COMBINATIONS.any? do |win_combo|
+  WIN_COMBINATIONS. do |win_combo|
     win_combo.each do |win_index|
       if win_index == "X" || win_index == "O"
         return win_combo 
