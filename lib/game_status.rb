@@ -30,7 +30,7 @@ def won?(board)
     end
   WIN_COMBINATIONS.find do |win_combo|
     win_combo.each do |win_index|
-      if win_index == "X" || win_index == "O"
+      if 
         return win_combo 
       else
         return false
