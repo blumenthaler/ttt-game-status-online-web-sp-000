@@ -24,24 +24,13 @@ WIN_COMBINATIONS = [
     #check if board contains win_combo  
 
 def won?(board)
-  empty_board = board.all? {|x| x == " "}
-    if empty_board
-     false
-    end
-  WIN_COMBINATIONS.find do |win_combo|
-      # win_combo = [0,1,2]
+  WIN_COMBINATIONS.each do |win_combo|
       if (board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X") || (board[win_combo[0]] == "O" && board[win_combo[1]] == "O" && board[win_combo[2]] == "O")
         return win_combo 
       else
         return false
       end
-  
-  if win_combo == true  
-    win_combo
-  else
-    false
   end
-end
 end
 
 
