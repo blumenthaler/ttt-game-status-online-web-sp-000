@@ -51,6 +51,5 @@ def winner(board)
     return "X"
   elsif won?(board) == true && board[win_combo].include "O"
     return "O"
-  else
-    return nil
   end
+end 
