@@ -29,13 +29,13 @@ def won?(board)
      false
     end
   WIN_COMBINATIONS.find do |win_combo|
-    win_combo.each do |win_index|
-      if board[win_index] == "X" 
+      # win_combo = [0,1,2]
+      if board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X"
         return win_combo 
       else
         return false
       end
-    end
+  
   if win_combo == true  
     win_combo
   else
