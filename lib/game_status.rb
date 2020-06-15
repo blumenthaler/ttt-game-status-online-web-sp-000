@@ -32,12 +32,6 @@ def won?(board)
   false
 end
 
-def won?(board)
-  if position_taken?(board, index)
-
-
-
-
 #  top_row_win = WIN_COMBINATIONS[0]
 #  middle_row_win = WIN_COMBINATIONS[1]
 #  bottom_row_win = WIN_COMBINATIONS[2]
