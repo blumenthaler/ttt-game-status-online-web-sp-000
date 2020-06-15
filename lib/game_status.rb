@@ -46,8 +46,11 @@ def over?(board)
 end 
 
 def winner(board)
-  if won?(board)
-    return # winning token 
+  won?(board)
+  if board[win_combo[0]] == "X"
+    return "X"
+  elsif board[win_combo[0]] == "O"
+    return "O"
   else
     return nil
 end
