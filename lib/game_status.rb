@@ -33,8 +33,7 @@ def won?(board)
 end
 
 def won?(board)
-  position_taken?(board, index)
-  if 
+  if position_taken?(board, index)
 
 
 
