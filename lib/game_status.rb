@@ -30,7 +30,7 @@ def won?(board)
     end
   WIN_COMBINATIONS.find do |win_combo|
       # win_combo = [0,1,2]
-      if board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X"
+      if (board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X") || (board[win_combo[0]] == "O" && board[win_combo[1]] == "O" && board[win_combo[2]] == "O")
         return win_combo 
       else
         return false
