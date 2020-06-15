@@ -15,7 +15,6 @@ WIN_COMBINATIONS = [
   [0,4,8], # diag topleft 
   [2,4,6]  # diag botleft
  ]
-  
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
